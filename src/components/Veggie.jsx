@@ -55,7 +55,7 @@ function Veggie ()
                 <Link to={"/recipe/" + recipe.id}>
                 <p>{recipe.title}</p>
                   <img src={recipe.image} alt={recipe.title} />
-                    <Gradient />
+                    {/* <Gradient /> */}
                     </Link>
                 </Card>
                 </SplideSlide>
@@ -68,10 +68,10 @@ function Veggie ()
 }
 
 const Wrapper = styled.div`
-  margin: 4rem 0rem;
+  margin: 3rem 0rem;
 `;
 const Card = styled.div`
-  min-height: 25rem;
+  min-height: 20rem;
   body-radius: 2rem;
   overflow: hidden;
   position: relative;
@@ -86,7 +86,7 @@ const Card = styled.div`
   }
   p{
     position: absolute;
-    z-index: 100:
+    z-index: 10:
     left: 50%;
     bottom: 0%;
     transform: translate(-50%, 0%);
@@ -103,12 +103,12 @@ const Card = styled.div`
 
 `;
 
-const Gradient = styled.div`
-  z-index: 3;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
-`;
+// const Gradient = styled.div`
+//   z-index: 3;
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+// `;
 
 export default Veggie

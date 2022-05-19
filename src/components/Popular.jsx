@@ -38,7 +38,7 @@ function Popular ()
           <h3>Popular Picks</h3>
 
       <Splide options={{
-        perPage: 4,
+        perPage: 3,
         // arrows: false,
         pagination: false,
         drag: 'free',
@@ -53,7 +53,7 @@ function Popular ()
                 <Link to={"/recipe/" + recipe.id}>
                 <p>{recipe.title}</p>
                   <img src={recipe.image} alt={recipe.title} />
-                    <Gradient />
+                    {/* <Gradient /> */}
                     </Link>
                 </Card>
                 </SplideSlide>
@@ -101,12 +101,12 @@ const Card = styled.div`
 
 `;
 
-const Gradient = styled.div`
-  z-index: 3;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
-`;
+// const Gradient = styled.div`
+//   z-index: 3;
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+// `;
 
 export default Popular
