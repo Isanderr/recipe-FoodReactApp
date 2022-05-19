@@ -39,7 +39,7 @@ function Recipe ()
                 <h3 dangerouslySetInnerHTML={{__html: details.instructions}}></h3>
             </div>
             )}
-            
+
             {activeTab === 'ingredients' && (
                 <ul>
                 {details.extendedIngredients.map((ingredient) =>(
